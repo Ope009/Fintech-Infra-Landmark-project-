@@ -41,7 +41,7 @@ module "eks" {
     terraform_user = {
       # ✅ Use a custom group, NOT system:masters
       kubernetes_groups = ["platform-admins"]
-      principal_arn     = "arn:aws:iam::888577033820:user/Blaise"
+      principal_arn     = "arn:aws:iam::999568710647:user/fusi"
 
       policy_associations = [
         {
