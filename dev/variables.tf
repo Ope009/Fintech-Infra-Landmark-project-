@@ -20,7 +20,7 @@ variable "cluster_name" {
 
 variable "rolearn" {
   description = "Add admin role to the aws-auth configmap"
-  default     = "arn:aws:iam::999568710647:role/terraform-create-role"
+  default     = "arn:aws:iam::888577033820:role/Blaise"
 }
 
 # ################################################################################
@@ -76,18 +76,18 @@ variable "san_domains" {
   default     = ["*.dominionsystem.org"]
 }
 
-variable "route53_zone_id" {
-  description = "Route 53 Hosted Zone ID"
-  type        = string
-  default     = "Z05475331ZK00RPD27RX0" # Replace with actual Route 53 Zone ID
-}
+#variable "route53_zone_id" {
+#  description = "Route 53 Hosted Zone ID"
+#  type        = string
+#  default     = "Z05475331ZK00RPD27RX0" # Replace with actual Route 53 Zone ID
+#}
 
 
 ##ECR
 
 variable "aws_account_id" {
   description = "AWS Account ID"
-  default     = "999568710647"
+  default     = "888577033820"
 }
 
 variable "repositories" {
